@@ -1,0 +1,15 @@
+[2022-08-01 20:50:46,420] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: example_python_operator.sleep_for_0 2022-08-01T23:48:56.444236+00:00 [queued]>
+[2022-08-01 20:50:46,431] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: example_python_operator.sleep_for_0 2022-08-01T23:48:56.444236+00:00 [queued]>
+[2022-08-01 20:50:46,432] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-01 20:50:46,432] {taskinstance.py:881} INFO - Starting attempt 1 of 1
+[2022-08-01 20:50:46,432] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-01 20:50:46,667] {taskinstance.py:901} INFO - Executing <Task(PythonOperator): sleep_for_0> on 2022-08-01T23:48:56.444236+00:00
+[2022-08-01 20:50:46,673] {standard_task_runner.py:54} INFO - Started process 110311 to run task
+[2022-08-01 20:50:46,718] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'example_python_operator', 'sleep_for_0', '2022-08-01T23:48:56.444236+00:00', '--job_id', '3', '--pool', 'default_pool', '--raw', '-sd', '/home/amadeus/ama/airflow-pipeline-alura/datapipeline/.env/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py', '--cfg_path', '/tmp/tmpwo0qrq7p']
+[2022-08-01 20:50:46,718] {standard_task_runner.py:78} INFO - Job 3: Subtask sleep_for_0
+[2022-08-01 20:50:47,450] {logging_mixin.py:112} INFO - Running <TaskInstance: example_python_operator.sleep_for_0 2022-08-01T23:48:56.444236+00:00 [running]> on host ama
+[2022-08-01 20:50:47,466] {python_operator.py:114} INFO - Done. Returned value was: None
+[2022-08-01 20:50:47,469] {taskinstance.py:1057} INFO - Marking task as SUCCESS.dag_id=example_python_operator, task_id=sleep_for_0, execution_date=20220801T234856, start_date=20220801T235046, end_date=20220801T235047
+[2022-08-01 20:50:51,054] {local_task_job.py:102} INFO - Task exited with return code 0
