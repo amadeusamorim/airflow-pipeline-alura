@@ -18,7 +18,7 @@ class TwitterHook(HttpHook): # Herdo um ganho
         start_time = (
             f"&start_time={self.start_time}"
             if self.start_time
-            else ""
+            else "" # parametro nao obrigatorio
         )
         end_time = (
             f"&end_time={self.end_time}"
