@@ -3,8 +3,9 @@ from airflow.models import BaseOperator, DAG, TaskInstance
 from airflow.utils.decorators import apply_defaults 
 from hooks.twitter_hook import TwitterHook
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
+from os.path import join # ajuda a criar o caminho do arquivo
 
 
 class TwitterOperator(BaseOperator): # Um operador é uma classe
@@ -55,8 +56,13 @@ if __name__ == "__main__":
     with DAG(dag_id="TwitterTest", start_date=datetime.now()) as dag:
         to = TwitterOperator(
             query="FlamengoMalvadao",
-            file_path="FlamengoMalvadao_{{ ds_nodash }}.json", # {{}} é um jajna template e o ds vai passar uma string com a data de execução, o no dash tira qualquer traço ou ponto, barras, etc
+            file_path=join(
+                "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/datalake", # Caminho do meu DL
+                "twitter_flamengomalvadao", # Num Data Lake, cada pasta é uma tabela e os arquivos, os campos
+                "extract_date={{ ds }}", # partição com a data de extraçao
+                "FlamengoMalvadao_{{ ds_nodash }}.json"
+                ), # {{}} é um jajna template e o ds vai passar uma string com a data de execução, o no dash tira qualquer traço ou ponto, barras, etc
             task_id="test_run"
         )
-        ti = TaskInstance(task=to, execution_date=datetime.now()) # Instncia da tarefa
+        ti = TaskInstance(task=to, execution_date=datetime.now() - timedelta(days=1)) # Instncia da tarefa para o dia anterior
         ti.run()
