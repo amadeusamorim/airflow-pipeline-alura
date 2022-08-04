@@ -12,7 +12,12 @@ ARGS = {
     "depends_on_past": False, # Vai depender de uma inst. anterior ou não (Nosso caso nao precisa da data anterior)
     "start_date": days_ago(6) # Quando iniciar a tarefa? (Nosso caso, seis dias atrás da data que eu iniciar a execucao)
 }
+BASE_FOLDER = join(
+    "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/datalake/{stage}/twitter_flamengomalvadao/{partition}"
+) # Deixando o codigo para que possa ser executado em outro ambiente
 TIMESTAMP_FORMAT = "%Y-%m-%dT%H:%M:%S.00Z" # Timestamp aceito pelo Twitter
+
+PARTITION_FOLDER = "extract_date={{ ds }}"
 
 with DAG(
     dag_id="twitter_dag", 
@@ -24,34 +29,35 @@ with DAG(
         task_id="twitter_flamengomalvadao",
         query="FlamengoMalvadao",
         file_path=join(
-                "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/datalake", # Caminho do meu DL
-                "twitter_flamengomalvadao", # Num Data Lake, cada pasta é uma tabela e os arquivos, os campos
-                "extract_date={{ ds }}", # partição com a data de extraçao
+                BASE_FOLDER.format(stage="bronze", partition=PARTITION_FOLDER), # Caminho do meu DL com a particao e tabela
                 "FlamengoMalvadao_{{ ds_nodash }}.json"
                 ),
         start_time = (
             "{{" 
-            f"execution_date.strftime('{ TIMESTAMP_FORMAT }')"
+            f" execution_date.strftime('{ TIMESTAMP_FORMAT }') "
             "}}" # Timestamp do momento de execucao adaptado para str repassada na variavel TIMESTAMP_FORMAT
         ),
         end_time = (
             "{{" 
-            f"next_execution_date.strftime('{ TIMESTAMP_FORMAT }')"
+            f" next_execution_date.strftime('{ TIMESTAMP_FORMAT }') "
             "}}" # Da a proxima data de execucao ate a proxima data de exec
-        ),
+        )
     )
 
     twitter_transform = SparkSubmitOperator(
         task_id = "transform_twitter_flamengomalvadao",
-        application="/home/amadeus/ama/airflow-pipeline-alura/datapipeline/spark/transfortmation.py",
+        application=join(
+            str(Path(__file__).parents[2]), # volta duas pastas atras
+            "spark/transfortmation.py"
+        ),
         name="twitter_transformation", # Nome spark chama o job
         application_args = [
             "--src",
-            "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/datalake/bronze/twitter_flamengomalvadao/extract_date=2022-08-02",
+            BASE_FOLDER.format(stage="bronze", partition=PARTITION_FOLDER),
             "--dest",
-            "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/datalake/silver/twitter_flamengomalvadao",
+            BASE_FOLDER.format(stage="silver", partition=""),            
             "--process-date",
-            "{{ ds }}"
+            "{{ ds }}",
         ]
     )
 

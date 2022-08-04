@@ -1,0 +1,184 @@
+[2022-08-04 11:38:24,284] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: twitter_dag.transform_twitter_flamengomalvadao 2022-07-31T09:00:00+00:00 [queued]>
+[2022-08-04 11:38:24,290] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: twitter_dag.transform_twitter_flamengomalvadao 2022-07-31T09:00:00+00:00 [queued]>
+[2022-08-04 11:38:24,290] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-04 11:38:24,290] {taskinstance.py:881} INFO - Starting attempt 1 of 1
+[2022-08-04 11:38:24,290] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-04 11:38:24,549] {taskinstance.py:901} INFO - Executing <Task(SparkSubmitOperator): transform_twitter_flamengomalvadao> on 2022-07-31T09:00:00+00:00
+[2022-08-04 11:38:24,552] {standard_task_runner.py:54} INFO - Started process 127452 to run task
+[2022-08-04 11:38:24,599] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'twitter_dag', 'transform_twitter_flamengomalvadao', '2022-07-31T09:00:00+00:00', '--job_id', '25', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/twitter_dag.py', '--cfg_path', '/tmp/tmpas2eg228']
+[2022-08-04 11:38:24,599] {standard_task_runner.py:78} INFO - Job 25: Subtask transform_twitter_flamengomalvadao
+[2022-08-04 11:38:24,877] {logging_mixin.py:112} INFO - Running <TaskInstance: twitter_dag.transform_twitter_flamengomalvadao 2022-07-31T09:00:00+00:00 [running]> on host ama
+[2022-08-04 11:38:24,917] {base_hook.py:89} INFO - Using connection to: id: spark_default. Host: local, Port: None, Schema: None, Login: None, Password: None, extra: XXXXXXXX
+[2022-08-04 11:38:24,918] {spark_submit_hook.py:325} INFO - Spark-Submit cmd: /home/amadeus/Downloads/spark-3.3.0-bin-hadoop2/bin/spark-submit --master local --name twitter_transformation /home/amadeus/ama/airflow-pipeline-alura/datapipeline/spark/transfortmation.py --src /home/amadeus/airflow-pipeline-alura/datapipeline/datalake/bronze/twitter_flamengomalvadao/extract_date=2022-07-31 --dest /home/amadeus/airflow-pipeline-alura/datapipeline/datalake/silver/twitter_flamengomalvadao/ --process-date 2022-07-31
+[2022-08-04 11:38:26,423] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:26 WARN Utils: Your hostname, ama resolves to a loopback address: 127.0.1.1; using 192.168.1.12 instead (on interface wlo1)
+[2022-08-04 11:38:26,425] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:26 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2022-08-04 11:38:27,454] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 INFO SparkContext: Running Spark version 3.3.0
+[2022-08-04 11:38:27,567] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2022-08-04 11:38:27,677] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 INFO ResourceUtils: ==============================================================
+[2022-08-04 11:38:27,677] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2022-08-04 11:38:27,678] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 INFO ResourceUtils: ==============================================================
+[2022-08-04 11:38:27,678] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 INFO SparkContext: Submitted application: twitter_transformation
+[2022-08-04 11:38:27,703] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2022-08-04 11:38:27,717] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 INFO ResourceProfile: Limiting resource is cpu
+[2022-08-04 11:38:27,718] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2022-08-04 11:38:27,770] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 INFO SecurityManager: Changing view acls to: amadeus
+[2022-08-04 11:38:27,771] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 INFO SecurityManager: Changing modify acls to: amadeus
+[2022-08-04 11:38:27,771] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 INFO SecurityManager: Changing view acls groups to:
+[2022-08-04 11:38:27,772] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 INFO SecurityManager: Changing modify acls groups to:
+[2022-08-04 11:38:27,773] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:27 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(amadeus); groups with view permissions: Set(); users  with modify permissions: Set(amadeus); groups with modify permissions: Set()
+[2022-08-04 11:38:28,084] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO Utils: Successfully started service 'sparkDriver' on port 39463.
+[2022-08-04 11:38:28,107] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO SparkEnv: Registering MapOutputTracker
+[2022-08-04 11:38:28,140] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO SparkEnv: Registering BlockManagerMaster
+[2022-08-04 11:38:28,159] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2022-08-04 11:38:28,159] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2022-08-04 11:38:28,164] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2022-08-04 11:38:28,186] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-58a338c8-51ee-48b2-b035-b3fad96fd72f
+[2022-08-04 11:38:28,204] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2022-08-04 11:38:28,224] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO SparkEnv: Registering OutputCommitCoordinator
+[2022-08-04 11:38:28,440] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[2022-08-04 11:38:28,449] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+[2022-08-04 11:38:28,619] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO Executor: Starting executor ID driver on host 192.168.1.12
+[2022-08-04 11:38:28,628] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2022-08-04 11:38:28,690] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34231.
+[2022-08-04 11:38:28,691] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO NettyBlockTransferService: Server created on 192.168.1.12:34231
+[2022-08-04 11:38:28,693] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2022-08-04 11:38:28,701] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.1.12, 34231, None)
+[2022-08-04 11:38:28,706] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.1.12:34231 with 434.4 MiB RAM, BlockManagerId(driver, 192.168.1.12, 34231, None)
+[2022-08-04 11:38:28,710] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.1.12, 34231, None)
+[2022-08-04 11:38:28,712] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:28 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.1.12, 34231, None)
+[2022-08-04 11:38:29,188] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:29 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2022-08-04 11:38:29,192] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:29 INFO SharedState: Warehouse path is 'file:/home/amadeus/ama/airflow-pipeline-alura/datapipeline/spark-warehouse'.
+[2022-08-04 11:38:30,047] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:30 INFO InMemoryFileIndex: It took 51 ms to list leaf files for 1 paths.
+[2022-08-04 11:38:30,126] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:30 INFO InMemoryFileIndex: It took 3 ms to list leaf files for 1 paths.
+[2022-08-04 11:38:32,019] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO FileSourceStrategy: Pushed Filters:
+[2022-08-04 11:38:32,020] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO FileSourceStrategy: Post-Scan Filters:
+[2022-08-04 11:38:32,024] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+[2022-08-04 11:38:32,306] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 173.7 KiB, free 434.2 MiB)
+[2022-08-04 11:38:32,357] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 24.7 KiB, free 434.2 MiB)
+[2022-08-04 11:38:32,361] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 192.168.1.12:34231 (size: 24.7 KiB, free: 434.4 MiB)
+[2022-08-04 11:38:32,369] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO SparkContext: Created broadcast 0 from json at NativeMethodAccessorImpl.java:0
+[2022-08-04 11:38:32,378] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4230511 bytes, open cost is considered as scanning 4194304 bytes.
+[2022-08-04 11:38:32,599] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO SparkContext: Starting job: json at NativeMethodAccessorImpl.java:0
+[2022-08-04 11:38:32,612] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO DAGScheduler: Got job 0 (json at NativeMethodAccessorImpl.java:0) with 1 output partitions
+[2022-08-04 11:38:32,612] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO DAGScheduler: Final stage: ResultStage 0 (json at NativeMethodAccessorImpl.java:0)
+[2022-08-04 11:38:32,612] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO DAGScheduler: Parents of final stage: List()
+[2022-08-04 11:38:32,613] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO DAGScheduler: Missing parents: List()
+[2022-08-04 11:38:32,616] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at json at NativeMethodAccessorImpl.java:0), which has no missing parents
+[2022-08-04 11:38:32,696] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 14.5 KiB, free 434.2 MiB)
+[2022-08-04 11:38:32,698] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 7.0 KiB, free 434.2 MiB)
+[2022-08-04 11:38:32,698] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 192.168.1.12:34231 (size: 7.0 KiB, free: 434.4 MiB)
+[2022-08-04 11:38:32,699] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1513
+[2022-08-04 11:38:32,711] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at json at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+[2022-08-04 11:38:32,712] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+[2022-08-04 11:38:32,752] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (192.168.1.12, executor driver, partition 0, PROCESS_LOCAL, 5023 bytes) taskResourceAssignments Map()
+[2022-08-04 11:38:32,764] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+[2022-08-04 11:38:32,888] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:32 INFO FileScanRDD: Reading File path: file:///home/amadeus/airflow-pipeline-alura/datapipeline/datalake/bronze/twitter_flamengomalvadao/extract_date=2022-07-31/FlamengoMalvadao_20220731.json, range: 0-36207, partition values: [empty row]
+[2022-08-04 11:38:33,060] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO CodeGenerator: Code generated in 140.479588 ms
+[2022-08-04 11:38:33,107] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2823 bytes result sent to driver
+[2022-08-04 11:38:33,114] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 369 ms on 192.168.1.12 (executor driver) (1/1)
+[2022-08-04 11:38:33,116] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool
+[2022-08-04 11:38:33,122] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO DAGScheduler: ResultStage 0 (json at NativeMethodAccessorImpl.java:0) finished in 0,490 s
+[2022-08-04 11:38:33,126] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+[2022-08-04 11:38:33,126] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+[2022-08-04 11:38:33,128] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO DAGScheduler: Job 0 finished: json at NativeMethodAccessorImpl.java:0, took 0,529014 s
+[2022-08-04 11:38:33,462] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileSourceStrategy: Pushed Filters: IsNotNull(data)
+[2022-08-04 11:38:33,464] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileSourceStrategy: Post-Scan Filters: (size(data#8, true) > 0),isnotnull(data#8)
+[2022-08-04 11:38:33,464] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileSourceStrategy: Output Data Schema: struct<data: array<struct<author_id:string,conversation_id:string,created_at:string,id:string,in_reply_to_user_id:string,public_metrics:struct<like_count:bigint,quote_count:bigint,reply_count:bigint,retweet_count:bigint>,text:string>>>
+[2022-08-04 11:38:33,477] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 192.168.1.12:34231 in memory (size: 7.0 KiB, free: 434.4 MiB)
+[2022-08-04 11:38:33,481] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 192.168.1.12:34231 in memory (size: 24.7 KiB, free: 434.4 MiB)
+[2022-08-04 11:38:33,530] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-08-04 11:38:33,531] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+[2022-08-04 11:38:33,655] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO CodeGenerator: Code generated in 70.855054 ms
+[2022-08-04 11:38:33,659] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 173.5 KiB, free 434.2 MiB)
+[2022-08-04 11:38:33,666] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 24.6 KiB, free 434.2 MiB)
+[2022-08-04 11:38:33,667] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 192.168.1.12:34231 (size: 24.6 KiB, free: 434.4 MiB)
+[2022-08-04 11:38:33,668] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO SparkContext: Created broadcast 2 from json at NativeMethodAccessorImpl.java:0
+[2022-08-04 11:38:33,671] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4230511 bytes, open cost is considered as scanning 4194304 bytes.
+[2022-08-04 11:38:33,718] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO SparkContext: Starting job: json at NativeMethodAccessorImpl.java:0
+[2022-08-04 11:38:33,719] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO DAGScheduler: Got job 1 (json at NativeMethodAccessorImpl.java:0) with 1 output partitions
+[2022-08-04 11:38:33,720] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO DAGScheduler: Final stage: ResultStage 1 (json at NativeMethodAccessorImpl.java:0)
+[2022-08-04 11:38:33,720] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO DAGScheduler: Parents of final stage: List()
+[2022-08-04 11:38:33,720] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO DAGScheduler: Missing parents: List()
+[2022-08-04 11:38:33,721] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO DAGScheduler: Submitting ResultStage 1 (CoalescedRDD[7] at json at NativeMethodAccessorImpl.java:0), which has no missing parents
+[2022-08-04 11:38:33,739] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 175.8 KiB, free 434.0 MiB)
+[2022-08-04 11:38:33,742] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 60.9 KiB, free 434.0 MiB)
+[2022-08-04 11:38:33,743] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 192.168.1.12:34231 (size: 60.9 KiB, free: 434.3 MiB)
+[2022-08-04 11:38:33,743] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1513
+[2022-08-04 11:38:33,744] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (CoalescedRDD[7] at json at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+[2022-08-04 11:38:33,744] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+[2022-08-04 11:38:33,748] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (192.168.1.12, executor driver, partition 0, PROCESS_LOCAL, 5252 bytes) taskResourceAssignments Map()
+[2022-08-04 11:38:33,749] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+[2022-08-04 11:38:33,788] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-08-04 11:38:33,788] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+[2022-08-04 11:38:33,839] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileScanRDD: Reading File path: file:///home/amadeus/airflow-pipeline-alura/datapipeline/datalake/bronze/twitter_flamengomalvadao/extract_date=2022-07-31/FlamengoMalvadao_20220731.json, range: 0-36207, partition values: [empty row]
+[2022-08-04 11:38:33,864] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO CodeGenerator: Code generated in 20.841892 ms
+[2022-08-04 11:38:33,884] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO CodeGenerator: Code generated in 4.672701 ms
+[2022-08-04 11:38:33,924] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileOutputCommitter: Saved output of task 'attempt_202208041138332638974514248393217_0001_m_000000_1' to file:/home/amadeus/airflow-pipeline-alura/datapipeline/datalake/silver/twitter_flamengomalvadao/tweet/process_date=2022-07-31/_temporary/0/task_202208041138332638974514248393217_0001_m_000000
+[2022-08-04 11:38:33,924] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO SparkHadoopMapRedUtil: attempt_202208041138332638974514248393217_0001_m_000000_1: Committed. Elapsed time: 0 ms.
+[2022-08-04 11:38:33,929] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2678 bytes result sent to driver
+[2022-08-04 11:38:33,931] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 186 ms on 192.168.1.12 (executor driver) (1/1)
+[2022-08-04 11:38:33,931] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool
+[2022-08-04 11:38:33,933] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO DAGScheduler: ResultStage 1 (json at NativeMethodAccessorImpl.java:0) finished in 0,210 s
+[2022-08-04 11:38:33,933] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+[2022-08-04 11:38:33,933] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+[2022-08-04 11:38:33,934] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO DAGScheduler: Job 1 finished: json at NativeMethodAccessorImpl.java:0, took 0,215725 s
+[2022-08-04 11:38:33,935] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileFormatWriter: Start to commit write Job 509c2f27-d327-4817-886b-ab3d2cfa573d.
+[2022-08-04 11:38:33,945] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileFormatWriter: Write Job 509c2f27-d327-4817-886b-ab3d2cfa573d committed. Elapsed time: 8 ms.
+[2022-08-04 11:38:33,947] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileFormatWriter: Finished processing stats for write job 509c2f27-d327-4817-886b-ab3d2cfa573d.
+[2022-08-04 11:38:33,975] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileSourceStrategy: Pushed Filters:
+[2022-08-04 11:38:33,975] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileSourceStrategy: Post-Scan Filters:
+[2022-08-04 11:38:33,975] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileSourceStrategy: Output Data Schema: struct<includes: struct<users: array<struct<created_at:string,id:string,name:string,username:string>>>>
+[2022-08-04 11:38:33,983] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-08-04 11:38:33,983] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:33 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+[2022-08-04 11:38:34,001] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO CodeGenerator: Code generated in 11.226991 ms
+[2022-08-04 11:38:34,004] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 173.5 KiB, free 433.8 MiB)
+[2022-08-04 11:38:34,012] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 24.6 KiB, free 433.8 MiB)
+[2022-08-04 11:38:34,013] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 192.168.1.12:34231 (size: 24.6 KiB, free: 434.3 MiB)
+[2022-08-04 11:38:34,013] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO SparkContext: Created broadcast 4 from json at NativeMethodAccessorImpl.java:0
+[2022-08-04 11:38:34,014] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4230511 bytes, open cost is considered as scanning 4194304 bytes.
+[2022-08-04 11:38:34,032] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO SparkContext: Starting job: json at NativeMethodAccessorImpl.java:0
+[2022-08-04 11:38:34,033] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO DAGScheduler: Got job 2 (json at NativeMethodAccessorImpl.java:0) with 1 output partitions
+[2022-08-04 11:38:34,033] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO DAGScheduler: Final stage: ResultStage 2 (json at NativeMethodAccessorImpl.java:0)
+[2022-08-04 11:38:34,033] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO DAGScheduler: Parents of final stage: List()
+[2022-08-04 11:38:34,033] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO DAGScheduler: Missing parents: List()
+[2022-08-04 11:38:34,035] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO DAGScheduler: Submitting ResultStage 2 (CoalescedRDD[11] at json at NativeMethodAccessorImpl.java:0), which has no missing parents
+[2022-08-04 11:38:34,056] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 161.1 KiB, free 433.6 MiB)
+[2022-08-04 11:38:34,059] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 57.8 KiB, free 433.6 MiB)
+[2022-08-04 11:38:34,059] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 192.168.1.12:34231 (size: 57.8 KiB, free: 434.2 MiB)
+[2022-08-04 11:38:34,060] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1513
+[2022-08-04 11:38:34,060] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (CoalescedRDD[11] at json at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+[2022-08-04 11:38:34,060] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+[2022-08-04 11:38:34,062] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2) (192.168.1.12, executor driver, partition 0, PROCESS_LOCAL, 5252 bytes) taskResourceAssignments Map()
+[2022-08-04 11:38:34,063] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+[2022-08-04 11:38:34,081] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-08-04 11:38:34,082] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+[2022-08-04 11:38:34,089] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO FileScanRDD: Reading File path: file:///home/amadeus/airflow-pipeline-alura/datapipeline/datalake/bronze/twitter_flamengomalvadao/extract_date=2022-07-31/FlamengoMalvadao_20220731.json, range: 0-36207, partition values: [empty row]
+[2022-08-04 11:38:34,102] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO CodeGenerator: Code generated in 10.687567 ms
+[2022-08-04 11:38:34,112] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO FileOutputCommitter: Saved output of task 'attempt_202208041138344537785753768731853_0002_m_000000_2' to file:/home/amadeus/airflow-pipeline-alura/datapipeline/datalake/silver/twitter_flamengomalvadao/user/process_date=2022-07-31/_temporary/0/task_202208041138344537785753768731853_0002_m_000000
+[2022-08-04 11:38:34,113] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO SparkHadoopMapRedUtil: attempt_202208041138344537785753768731853_0002_m_000000_2: Committed. Elapsed time: 0 ms.
+[2022-08-04 11:38:34,114] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 2579 bytes result sent to driver
+[2022-08-04 11:38:34,115] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 53 ms on 192.168.1.12 (executor driver) (1/1)
+[2022-08-04 11:38:34,115] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool
+[2022-08-04 11:38:34,116] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO DAGScheduler: ResultStage 2 (json at NativeMethodAccessorImpl.java:0) finished in 0,080 s
+[2022-08-04 11:38:34,116] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+[2022-08-04 11:38:34,117] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+[2022-08-04 11:38:34,117] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO DAGScheduler: Job 2 finished: json at NativeMethodAccessorImpl.java:0, took 0,085053 s
+[2022-08-04 11:38:34,117] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO FileFormatWriter: Start to commit write Job ab6ae093-dfa2-46c1-b7b8-8af897f7ec5f.
+[2022-08-04 11:38:34,124] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO FileFormatWriter: Write Job ab6ae093-dfa2-46c1-b7b8-8af897f7ec5f committed. Elapsed time: 6 ms.
+[2022-08-04 11:38:34,125] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO FileFormatWriter: Finished processing stats for write job ab6ae093-dfa2-46c1-b7b8-8af897f7ec5f.
+[2022-08-04 11:38:34,153] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO SparkContext: Invoking stop() from shutdown hook
+[2022-08-04 11:38:34,161] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO SparkUI: Stopped Spark web UI at http://192.168.1.12:4041
+[2022-08-04 11:38:34,179] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2022-08-04 11:38:34,201] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO MemoryStore: MemoryStore cleared
+[2022-08-04 11:38:34,201] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO BlockManager: BlockManager stopped
+[2022-08-04 11:38:34,204] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2022-08-04 11:38:34,206] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2022-08-04 11:38:34,209] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO SparkContext: Successfully stopped SparkContext
+[2022-08-04 11:38:34,209] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO ShutdownHookManager: Shutdown hook called
+[2022-08-04 11:38:34,210] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO ShutdownHookManager: Deleting directory /tmp/spark-5e84d98c-a406-4e71-bc88-a1b893860d4b
+[2022-08-04 11:38:34,211] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO ShutdownHookManager: Deleting directory /tmp/spark-8c09361d-d867-4339-97b4-e0ecf6b8619a
+[2022-08-04 11:38:34,213] {spark_submit_hook.py:479} INFO - 22/08/04 11:38:34 INFO ShutdownHookManager: Deleting directory /tmp/spark-8c09361d-d867-4339-97b4-e0ecf6b8619a/pyspark-b893bb80-ffaa-4711-ae36-7f580e0fee6d
+[2022-08-04 11:38:34,268] {taskinstance.py:1057} INFO - Marking task as SUCCESS.dag_id=twitter_dag, task_id=transform_twitter_flamengomalvadao, execution_date=20220731T090000, start_date=20220804T143824, end_date=20220804T143834
+[2022-08-04 11:38:38,910] {local_task_job.py:102} INFO - Task exited with return code 0
