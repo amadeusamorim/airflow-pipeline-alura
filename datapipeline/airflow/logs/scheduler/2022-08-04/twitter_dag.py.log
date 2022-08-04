@@ -430,3 +430,498 @@ Support for importing from within the airflow namespace for plugins will be drop
   from airflow.operators.amadeus import TwitterOperator
 [2022-08-03 22:02:19,192] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
 [2022-08-03 22:02:19,842] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.667 seconds
+[2022-08-03 22:03:11,224] {scheduler_job.py:154} INFO - Started process (PID=79617) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:03:11,230] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:03:11,231] {logging_mixin.py:112} INFO - [2022-08-03 22:03:11,231] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:03:11,234] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:03:11,238] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:03:11,565] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.340 seconds
+[2022-08-03 22:04:03,283] {scheduler_job.py:154} INFO - Started process (PID=79811) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:04:03,289] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:04:03,290] {logging_mixin.py:112} INFO - [2022-08-03 22:04:03,290] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:04:03,295] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:04:03,300] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:04:03,619] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.337 seconds
+[2022-08-03 22:04:55,336] {scheduler_job.py:154} INFO - Started process (PID=79883) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:04:55,340] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:04:55,341] {logging_mixin.py:112} INFO - [2022-08-03 22:04:55,341] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:04:55,345] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:04:55,348] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:04:56,709] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 1.374 seconds
+[2022-08-03 22:05:47,390] {scheduler_job.py:154} INFO - Started process (PID=79943) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:05:47,394] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:05:47,395] {logging_mixin.py:112} INFO - [2022-08-03 22:05:47,395] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:05:47,398] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:05:47,402] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:05:47,811] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.422 seconds
+[2022-08-03 22:06:39,437] {scheduler_job.py:154} INFO - Started process (PID=80041) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:06:39,446] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:06:39,449] {logging_mixin.py:112} INFO - [2022-08-03 22:06:39,449] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:06:39,451] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:06:39,455] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:06:39,894] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.457 seconds
+[2022-08-03 22:07:31,502] {scheduler_job.py:154} INFO - Started process (PID=80211) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:07:31,509] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:07:31,510] {logging_mixin.py:112} INFO - [2022-08-03 22:07:31,510] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:07:31,514] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:07:31,521] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:07:32,241] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.739 seconds
+[2022-08-03 22:08:23,553] {scheduler_job.py:154} INFO - Started process (PID=80508) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:08:23,559] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:08:23,560] {logging_mixin.py:112} INFO - [2022-08-03 22:08:23,559] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:08:23,565] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:08:23,569] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:08:23,943] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.391 seconds
+[2022-08-03 22:09:15,602] {scheduler_job.py:154} INFO - Started process (PID=80942) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:09:15,608] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:09:15,610] {logging_mixin.py:112} INFO - [2022-08-03 22:09:15,609] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:09:15,614] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:09:15,619] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:09:15,950] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.348 seconds
+[2022-08-03 22:10:07,661] {scheduler_job.py:154} INFO - Started process (PID=81183) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:10:07,668] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:10:07,669] {logging_mixin.py:112} INFO - [2022-08-03 22:10:07,669] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:10:07,673] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:10:07,679] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:10:08,261] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.600 seconds
+[2022-08-03 22:10:59,727] {scheduler_job.py:154} INFO - Started process (PID=81451) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:10:59,733] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:10:59,734] {logging_mixin.py:112} INFO - [2022-08-03 22:10:59,734] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:10:59,739] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:10:59,743] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:11:00,071] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.344 seconds
+[2022-08-03 22:11:51,766] {scheduler_job.py:154} INFO - Started process (PID=81772) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:11:51,771] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:11:51,772] {logging_mixin.py:112} INFO - [2022-08-03 22:11:51,772] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:11:51,776] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:11:51,781] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:11:52,115] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.350 seconds
+[2022-08-03 22:12:43,824] {scheduler_job.py:154} INFO - Started process (PID=82078) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:12:43,829] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:12:43,830] {logging_mixin.py:112} INFO - [2022-08-03 22:12:43,830] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:12:43,834] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:12:43,840] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:12:44,428] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.604 seconds
+[2022-08-03 22:13:35,877] {scheduler_job.py:154} INFO - Started process (PID=82445) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:13:35,882] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:13:35,883] {logging_mixin.py:112} INFO - [2022-08-03 22:13:35,882] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:13:35,887] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:13:35,892] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:13:36,209] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.332 seconds
+[2022-08-03 22:14:27,930] {scheduler_job.py:154} INFO - Started process (PID=82777) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:14:27,938] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:14:27,938] {logging_mixin.py:112} INFO - [2022-08-03 22:14:27,938] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:14:27,942] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:14:27,948] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:14:28,271] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.341 seconds
+[2022-08-03 22:15:19,987] {scheduler_job.py:154} INFO - Started process (PID=83060) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:15:19,993] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:15:19,994] {logging_mixin.py:112} INFO - [2022-08-03 22:15:19,994] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:15:20,000] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:15:20,005] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:15:20,628] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.641 seconds
+[2022-08-03 22:16:12,027] {scheduler_job.py:154} INFO - Started process (PID=83380) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:16:12,030] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:16:12,030] {logging_mixin.py:112} INFO - [2022-08-03 22:16:12,030] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:16:12,032] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:16:12,035] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:16:12,455] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.428 seconds
+[2022-08-03 22:17:04,089] {scheduler_job.py:154} INFO - Started process (PID=83657) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:17:04,097] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:17:04,097] {logging_mixin.py:112} INFO - [2022-08-03 22:17:04,097] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:17:04,101] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:17:04,107] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:17:04,575] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.486 seconds
+[2022-08-03 22:17:56,131] {scheduler_job.py:154} INFO - Started process (PID=83963) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:17:56,135] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:17:56,135] {logging_mixin.py:112} INFO - [2022-08-03 22:17:56,135] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:17:56,137] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:17:56,140] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:17:56,711] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.580 seconds
+[2022-08-03 22:18:48,187] {scheduler_job.py:154} INFO - Started process (PID=84304) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:18:48,194] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:18:48,194] {logging_mixin.py:112} INFO - [2022-08-03 22:18:48,194] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:18:48,198] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:18:48,205] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:18:48,696] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.509 seconds
+[2022-08-03 22:19:40,244] {scheduler_job.py:154} INFO - Started process (PID=84592) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:19:40,250] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:19:40,251] {logging_mixin.py:112} INFO - [2022-08-03 22:19:40,251] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:19:40,255] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:19:40,259] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:19:41,014] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.771 seconds
+[2022-08-03 22:20:32,294] {scheduler_job.py:154} INFO - Started process (PID=84884) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:20:32,299] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:20:32,300] {logging_mixin.py:112} INFO - [2022-08-03 22:20:32,300] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:20:32,304] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:20:32,309] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:20:33,291] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.997 seconds
+[2022-08-03 22:21:24,351] {scheduler_job.py:154} INFO - Started process (PID=85147) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:21:24,357] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:21:24,358] {logging_mixin.py:112} INFO - [2022-08-03 22:21:24,358] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:21:24,362] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:21:24,368] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:21:24,850] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.499 seconds
+[2022-08-03 22:22:16,399] {scheduler_job.py:154} INFO - Started process (PID=85335) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:22:16,404] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:22:16,405] {logging_mixin.py:112} INFO - [2022-08-03 22:22:16,405] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:22:16,409] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:22:16,413] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:22:16,656] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.257 seconds
+[2022-08-03 22:23:08,454] {scheduler_job.py:154} INFO - Started process (PID=85659) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:23:08,459] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:23:08,460] {logging_mixin.py:112} INFO - [2022-08-03 22:23:08,460] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:23:08,464] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:23:08,468] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:23:08,990] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.536 seconds
+[2022-08-03 22:24:00,508] {scheduler_job.py:154} INFO - Started process (PID=85997) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:24:00,513] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:24:00,514] {logging_mixin.py:112} INFO - [2022-08-03 22:24:00,514] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:24:00,518] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:24:00,524] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:24:00,850] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.342 seconds
+[2022-08-03 22:24:52,560] {scheduler_job.py:154} INFO - Started process (PID=86275) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:24:52,566] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:24:52,567] {logging_mixin.py:112} INFO - [2022-08-03 22:24:52,567] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:24:52,573] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:24:52,577] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:24:52,906] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.346 seconds
+[2022-08-03 22:25:44,615] {scheduler_job.py:154} INFO - Started process (PID=86580) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:25:44,621] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:25:44,622] {logging_mixin.py:112} INFO - [2022-08-03 22:25:44,622] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:25:44,625] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:25:44,629] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:25:45,415] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.800 seconds
+[2022-08-03 22:26:36,677] {scheduler_job.py:154} INFO - Started process (PID=86868) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:26:36,683] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:26:36,683] {logging_mixin.py:112} INFO - [2022-08-03 22:26:36,683] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:26:36,687] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:26:36,691] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:26:37,207] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.530 seconds
+[2022-08-03 22:27:28,731] {scheduler_job.py:154} INFO - Started process (PID=87205) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:27:28,738] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:27:28,739] {logging_mixin.py:112} INFO - [2022-08-03 22:27:28,738] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:27:28,743] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:27:28,747] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:27:29,100] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.369 seconds
+[2022-08-03 22:28:20,785] {scheduler_job.py:154} INFO - Started process (PID=87502) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:28:20,791] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:28:20,792] {logging_mixin.py:112} INFO - [2022-08-03 22:28:20,792] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:28:20,796] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:28:20,802] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:28:21,446] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.661 seconds
+[2022-08-03 22:29:12,838] {scheduler_job.py:154} INFO - Started process (PID=87876) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:29:12,844] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:29:12,845] {logging_mixin.py:112} INFO - [2022-08-03 22:29:12,845] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:29:12,849] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:29:12,855] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:29:13,311] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.473 seconds
+[2022-08-03 22:30:04,891] {scheduler_job.py:154} INFO - Started process (PID=87970) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:30:04,896] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:30:04,897] {logging_mixin.py:112} INFO - [2022-08-03 22:30:04,896] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:30:04,900] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:30:04,906] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:30:05,161] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.270 seconds
+[2022-08-03 22:30:56,946] {scheduler_job.py:154} INFO - Started process (PID=88280) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:30:56,954] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:30:56,955] {logging_mixin.py:112} INFO - [2022-08-03 22:30:56,954] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:30:56,959] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:30:56,963] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:30:57,697] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.750 seconds
+[2022-08-03 22:31:48,997] {scheduler_job.py:154} INFO - Started process (PID=88588) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:31:49,003] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:31:49,004] {logging_mixin.py:112} INFO - [2022-08-03 22:31:49,003] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:31:49,008] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:31:49,012] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:31:49,347] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.349 seconds
+[2022-08-03 22:32:41,049] {scheduler_job.py:154} INFO - Started process (PID=88870) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:32:41,055] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:32:41,055] {logging_mixin.py:112} INFO - [2022-08-03 22:32:41,055] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:32:41,059] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:32:41,064] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:32:41,394] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.345 seconds
+[2022-08-03 22:33:33,106] {scheduler_job.py:154} INFO - Started process (PID=89128) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:33:33,111] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:33:33,112] {logging_mixin.py:112} INFO - [2022-08-03 22:33:33,112] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:33:33,116] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:33:33,121] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:33:33,694] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.589 seconds
+[2022-08-03 22:34:25,159] {scheduler_job.py:154} INFO - Started process (PID=89324) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:34:25,165] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:34:25,165] {logging_mixin.py:112} INFO - [2022-08-03 22:34:25,165] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:34:25,169] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:34:25,174] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:34:25,434] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.275 seconds
+[2022-08-03 22:35:17,218] {scheduler_job.py:154} INFO - Started process (PID=89380) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:35:17,224] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:35:17,225] {logging_mixin.py:112} INFO - [2022-08-03 22:35:17,224] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:35:17,228] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:35:17,232] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:35:17,547] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.329 seconds
+[2022-08-03 22:36:09,274] {scheduler_job.py:154} INFO - Started process (PID=89533) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:36:09,281] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:36:09,282] {logging_mixin.py:112} INFO - [2022-08-03 22:36:09,282] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:36:09,286] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:36:09,291] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:36:09,970] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.696 seconds
+[2022-08-03 22:37:01,333] {scheduler_job.py:154} INFO - Started process (PID=89656) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:37:01,339] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:37:01,340] {logging_mixin.py:112} INFO - [2022-08-03 22:37:01,340] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:37:01,344] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:37:01,350] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:37:01,718] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.385 seconds
+[2022-08-03 22:37:53,382] {scheduler_job.py:154} INFO - Started process (PID=89785) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:37:53,389] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:37:53,390] {logging_mixin.py:112} INFO - [2022-08-03 22:37:53,389] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:37:53,394] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:37:53,400] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:37:53,746] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.364 seconds
+[2022-08-03 22:38:45,432] {scheduler_job.py:154} INFO - Started process (PID=89997) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:38:45,437] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:38:45,438] {logging_mixin.py:112} INFO - [2022-08-03 22:38:45,438] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:38:45,441] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:38:45,445] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:38:46,305] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.873 seconds
+[2022-08-03 22:39:37,485] {scheduler_job.py:154} INFO - Started process (PID=90257) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:39:37,491] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:39:37,492] {logging_mixin.py:112} INFO - [2022-08-03 22:39:37,491] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:39:37,495] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:39:37,500] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:39:37,840] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.355 seconds
+[2022-08-03 22:40:29,531] {scheduler_job.py:154} INFO - Started process (PID=90513) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:40:29,534] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:40:29,534] {logging_mixin.py:112} INFO - [2022-08-03 22:40:29,534] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:40:29,536] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:40:29,539] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:40:29,829] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.297 seconds
+[2022-08-03 22:41:21,598] {scheduler_job.py:154} INFO - Started process (PID=90678) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:41:21,602] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:41:21,603] {logging_mixin.py:112} INFO - [2022-08-03 22:41:21,603] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:41:21,607] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:41:21,611] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:41:22,249] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.652 seconds
+[2022-08-03 22:42:13,655] {scheduler_job.py:154} INFO - Started process (PID=90802) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:42:13,662] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:42:13,663] {logging_mixin.py:112} INFO - [2022-08-03 22:42:13,663] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:42:13,667] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:42:13,671] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:42:14,061] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.406 seconds
+[2022-08-03 22:43:05,714] {scheduler_job.py:154} INFO - Started process (PID=91016) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:43:05,721] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:43:05,722] {logging_mixin.py:112} INFO - [2022-08-03 22:43:05,721] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:43:05,726] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:43:05,731] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:43:06,042] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.328 seconds
+[2022-08-03 22:43:57,768] {scheduler_job.py:154} INFO - Started process (PID=91168) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:43:57,773] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:43:57,774] {logging_mixin.py:112} INFO - [2022-08-03 22:43:57,774] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:43:57,778] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:43:57,782] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:43:58,257] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.489 seconds
+[2022-08-03 22:44:49,826] {scheduler_job.py:154} INFO - Started process (PID=91231) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:44:49,834] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:44:49,835] {logging_mixin.py:112} INFO - [2022-08-03 22:44:49,834] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:44:49,839] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:44:49,844] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:44:50,156] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.330 seconds
+[2022-08-03 22:45:41,884] {scheduler_job.py:154} INFO - Started process (PID=91287) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:45:41,889] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:45:41,890] {logging_mixin.py:112} INFO - [2022-08-03 22:45:41,890] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:45:41,894] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:45:41,898] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:45:42,205] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.321 seconds
+[2022-08-03 22:46:33,942] {scheduler_job.py:154} INFO - Started process (PID=91362) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:46:33,948] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:46:33,948] {logging_mixin.py:112} INFO - [2022-08-03 22:46:33,948] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:46:33,952] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:46:33,957] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:46:34,538] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.596 seconds
+[2022-08-03 22:47:25,996] {scheduler_job.py:154} INFO - Started process (PID=91592) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:47:26,003] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:47:26,004] {logging_mixin.py:112} INFO - [2022-08-03 22:47:26,004] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:47:26,008] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:47:26,012] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:47:26,343] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.347 seconds
+[2022-08-03 22:48:18,055] {scheduler_job.py:154} INFO - Started process (PID=91783) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:48:18,061] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:48:18,062] {logging_mixin.py:112} INFO - [2022-08-03 22:48:18,061] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:48:18,065] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:48:18,070] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:48:18,524] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.469 seconds
+[2022-08-03 22:49:10,113] {scheduler_job.py:154} INFO - Started process (PID=91937) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:49:10,118] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:49:10,119] {logging_mixin.py:112} INFO - [2022-08-03 22:49:10,119] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:49:10,122] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:49:10,126] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:49:10,717] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.603 seconds
+[2022-08-03 22:50:02,158] {scheduler_job.py:154} INFO - Started process (PID=92366) to work on /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:50:02,160] {scheduler_job.py:1572} INFO - Processing file /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py for tasks to queue
+[2022-08-03 22:50:02,160] {logging_mixin.py:112} INFO - [2022-08-03 22:50:02,160] {dagbag.py:417} INFO - Filling up the DagBag from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:50:02,162] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py:4: FutureWarning: Importing 'TwitterOperator' from under 'airflow.operators.*' has been deprecated and should be directly imported as 'operators.twitter_operator.TwitterOperator' instead.
+
+Support for importing from within the airflow namespace for plugins will be dropped entirely in Airflow 2.0. See <http://airflow.apache.org/docs/stable/howto/custom-operator.html>.
+  from airflow.operators.amadeus import TwitterOperator
+[2022-08-03 22:50:02,164] {scheduler_job.py:1584} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py
+[2022-08-03 22:50:02,548] {scheduler_job.py:162} INFO - Processing /home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/dags/twitter_dag.py took 0.391 seconds
