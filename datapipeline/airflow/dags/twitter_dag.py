@@ -53,9 +53,9 @@ with DAG(
         name="twitter_transformation", # Nome spark chama o job
         application_args = [
             "--src",
-            BASE_FOLDER.format(stage="bronze", partition=PARTITION_FOLDER),
+            BASE_FOLDER.format(stage="bronze", partition=PARTITION_FOLDER), # Busca os dados da bronze
             "--dest",
-            BASE_FOLDER.format(stage="silver", partition=""),            
+            BASE_FOLDER.format(stage="silver", partition=""), # Leva pra silver
             "--process-date",
             "{{ ds }}",
         ]

@@ -8,14 +8,21 @@ def get_tweets_data(df):
     return df\
         .select(
             f.explode("data").alias("tweets")).select(
-                "tweets.author_id", "tweets.conversation_id", "tweets.created_at", "tweets.id", "tweets.in_reply_to_user_id", "tweets.public_metrics.*", "tweets.text"
+                "tweets.author_id", 
+                "tweets.conversation_id", 
+                "tweets.created_at", 
+                "tweets.id", 
+                "tweets.in_reply_to_user_id", 
+                "tweets.public_metrics.*", 
+                "tweets.text"
             ) # explode nos campos multilinhas
         
             
 def get_users_data(df):
     return df\
         .select(
-            f.explode("includes.users").alias("users")).select(
+            f.explode("includes.users").alias("users")
+            ).select(
                 "users.*"
             )
 

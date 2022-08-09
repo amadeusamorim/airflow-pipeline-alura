@@ -50,7 +50,7 @@ class TwitterOperator(BaseOperator): # Um operador é uma classe
         with open(self.file_path, "w") as output_file:
             for pg in hook.run():
                 json.dump(pg, output_file, ensure_ascii=False) # ensure_ascii garante que não se percam os caracteres especiais e emojis
-                output_file.write(("\n"))
+                output_file.write("\n")
 
 if __name__ == "__main__":
     with DAG(dag_id="TwitterTest", start_date=datetime.now()) as dag:

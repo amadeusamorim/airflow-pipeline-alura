@@ -1,0 +1,84 @@
+[2022-08-04 23:23:28,929] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: twitter_dag.transform_twitter_flamengomalvadao 2022-08-01T09:00:00+00:00 [queued]>
+[2022-08-04 23:23:28,961] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: twitter_dag.transform_twitter_flamengomalvadao 2022-08-01T09:00:00+00:00 [queued]>
+[2022-08-04 23:23:28,961] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-04 23:23:28,961] {taskinstance.py:881} INFO - Starting attempt 7 of 7
+[2022-08-04 23:23:28,962] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-04 23:23:29,176] {taskinstance.py:901} INFO - Executing <Task(SparkSubmitOperator): transform_twitter_flamengomalvadao> on 2022-08-01T09:00:00+00:00
+[2022-08-04 23:23:29,181] {standard_task_runner.py:54} INFO - Started process 163617 to run task
+[2022-08-04 23:23:29,302] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'twitter_dag', 'transform_twitter_flamengomalvadao', '2022-08-01T09:00:00+00:00', '--job_id', '107', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/twitter_dag.py', '--cfg_path', '/tmp/tmp4rf_bajo']
+[2022-08-04 23:23:29,303] {standard_task_runner.py:78} INFO - Job 107: Subtask transform_twitter_flamengomalvadao
+[2022-08-04 23:23:29,548] {logging_mixin.py:112} INFO - Running <TaskInstance: twitter_dag.transform_twitter_flamengomalvadao 2022-08-01T09:00:00+00:00 [running]> on host ama
+[2022-08-04 23:23:29,665] {base_hook.py:89} INFO - Using connection to: id: spark_default. Host: local, Port: None, Schema: None, Login: None, Password: None, extra: XXXXXXXX
+[2022-08-04 23:23:29,667] {spark_submit_hook.py:325} INFO - Spark-Submit cmd: /home/amadeus/Downloads/spark-3.3.0-bin-hadoop2/bin/spark-submit --master local --name twitter_transformation /home/amadeus/ama/airflow-pipeline-alura/datapipeline/spark/transfortmation.py --src /home/amadeus/ama/airflow-pipeline-alura/datapipeline/datalake/bronze/twitter_flamengomalvadao/teste1 --dest /home/amadeus/ama/airflow-pipeline-alura/datapipeline/datalake/silver/twitter_flamengomalvadao/ --process-date 2022-08-01
+[2022-08-04 23:23:31,866] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:31 WARN Utils: Your hostname, ama resolves to a loopback address: 127.0.1.1; using 192.168.0.20 instead (on interface wlo1)
+[2022-08-04 23:23:31,869] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:31 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2022-08-04 23:23:33,335] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 INFO SparkContext: Running Spark version 3.3.0
+[2022-08-04 23:23:33,544] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2022-08-04 23:23:33,675] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 INFO ResourceUtils: ==============================================================
+[2022-08-04 23:23:33,675] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2022-08-04 23:23:33,676] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 INFO ResourceUtils: ==============================================================
+[2022-08-04 23:23:33,676] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 INFO SparkContext: Submitted application: twitter_transformation
+[2022-08-04 23:23:33,708] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2022-08-04 23:23:33,728] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 INFO ResourceProfile: Limiting resource is cpu
+[2022-08-04 23:23:33,729] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2022-08-04 23:23:33,804] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 INFO SecurityManager: Changing view acls to: amadeus
+[2022-08-04 23:23:33,805] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 INFO SecurityManager: Changing modify acls to: amadeus
+[2022-08-04 23:23:33,805] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 INFO SecurityManager: Changing view acls groups to:
+[2022-08-04 23:23:33,806] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 INFO SecurityManager: Changing modify acls groups to:
+[2022-08-04 23:23:33,807] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:33 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(amadeus); groups with view permissions: Set(); users  with modify permissions: Set(amadeus); groups with modify permissions: Set()
+[2022-08-04 23:23:34,420] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:34 INFO Utils: Successfully started service 'sparkDriver' on port 37667.
+[2022-08-04 23:23:34,477] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:34 INFO SparkEnv: Registering MapOutputTracker
+[2022-08-04 23:23:34,562] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:34 INFO SparkEnv: Registering BlockManagerMaster
+[2022-08-04 23:23:34,606] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:34 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2022-08-04 23:23:34,607] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:34 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2022-08-04 23:23:34,615] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:34 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2022-08-04 23:23:34,678] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:34 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-bad695cd-bf44-4b50-b374-2427278f7ff2
+[2022-08-04 23:23:34,717] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:34 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2022-08-04 23:23:34,742] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:34 INFO SparkEnv: Registering OutputCommitCoordinator
+[2022-08-04 23:23:35,057] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:35 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[2022-08-04 23:23:35,068] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:35 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+[2022-08-04 23:23:35,250] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:35 INFO Executor: Starting executor ID driver on host 192.168.0.20
+[2022-08-04 23:23:35,261] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:35 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2022-08-04 23:23:35,288] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:35 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 32859.
+[2022-08-04 23:23:35,288] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:35 INFO NettyBlockTransferService: Server created on 192.168.0.20:32859
+[2022-08-04 23:23:35,291] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:35 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2022-08-04 23:23:35,299] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:35 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.0.20, 32859, None)
+[2022-08-04 23:23:35,305] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:35 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.0.20:32859 with 434.4 MiB RAM, BlockManagerId(driver, 192.168.0.20, 32859, None)
+[2022-08-04 23:23:35,309] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:35 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.0.20, 32859, None)
+[2022-08-04 23:23:35,311] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:35 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.0.20, 32859, None)
+[2022-08-04 23:23:36,101] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:36 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2022-08-04 23:23:36,106] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:36 INFO SharedState: Warehouse path is 'file:/home/amadeus/ama/airflow-pipeline-alura/datapipeline/spark-warehouse'.
+[2022-08-04 23:23:37,066] {spark_submit_hook.py:479} INFO - Traceback (most recent call last):
+[2022-08-04 23:23:37,067] {spark_submit_hook.py:479} INFO - File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/spark/transfortmation.py", line 50, in <module>
+[2022-08-04 23:23:37,068] {spark_submit_hook.py:479} INFO - twitter_transform(spark, args.src, args.dest, args.process_date)
+[2022-08-04 23:23:37,068] {spark_submit_hook.py:479} INFO - File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/spark/transfortmation.py", line 26, in twitter_transform
+[2022-08-04 23:23:37,068] {spark_submit_hook.py:479} INFO - df = spark.read.json(src)
+[2022-08-04 23:23:37,068] {spark_submit_hook.py:479} INFO - File "/home/amadeus/Downloads/spark-3.3.0-bin-hadoop2/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 284, in json
+[2022-08-04 23:23:37,068] {spark_submit_hook.py:479} INFO - File "/home/amadeus/Downloads/spark-3.3.0-bin-hadoop2/python/lib/py4j-0.10.9.5-src.zip/py4j/java_gateway.py", line 1321, in __call__
+[2022-08-04 23:23:37,068] {spark_submit_hook.py:479} INFO - File "/home/amadeus/Downloads/spark-3.3.0-bin-hadoop2/python/lib/pyspark.zip/pyspark/sql/utils.py", line 196, in deco
+[2022-08-04 23:23:37,077] {spark_submit_hook.py:479} INFO - pyspark.sql.utils.AnalysisException: Path does not exist: file:/home/amadeus/ama/airflow-pipeline-alura/datapipeline/datalake/bronze/twitter_flamengomalvadao/teste1
+[2022-08-04 23:23:37,118] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:37 INFO SparkContext: Invoking stop() from shutdown hook
+[2022-08-04 23:23:37,131] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:37 INFO SparkUI: Stopped Spark web UI at http://192.168.0.20:4041
+[2022-08-04 23:23:37,147] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:37 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2022-08-04 23:23:37,159] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:37 INFO MemoryStore: MemoryStore cleared
+[2022-08-04 23:23:37,159] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:37 INFO BlockManager: BlockManager stopped
+[2022-08-04 23:23:37,170] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:37 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2022-08-04 23:23:37,174] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:37 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2022-08-04 23:23:37,178] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:37 INFO SparkContext: Successfully stopped SparkContext
+[2022-08-04 23:23:37,178] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:37 INFO ShutdownHookManager: Shutdown hook called
+[2022-08-04 23:23:37,179] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:37 INFO ShutdownHookManager: Deleting directory /tmp/spark-d416bc84-ad68-46c9-9394-a70368b07de9
+[2022-08-04 23:23:37,182] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:37 INFO ShutdownHookManager: Deleting directory /tmp/spark-7ddf21c4-fece-464b-9504-6eca5b39e77a/pyspark-d45e0343-8f61-4c2f-bb2d-ce7ce5428758
+[2022-08-04 23:23:37,184] {spark_submit_hook.py:479} INFO - 22/08/04 23:23:37 INFO ShutdownHookManager: Deleting directory /tmp/spark-7ddf21c4-fece-464b-9504-6eca5b39e77a
+[2022-08-04 23:23:37,252] {taskinstance.py:1150} ERROR - Cannot execute: /home/amadeus/Downloads/spark-3.3.0-bin-hadoop2/bin/spark-submit --master local --name twitter_transformation /home/amadeus/ama/airflow-pipeline-alura/datapipeline/spark/transfortmation.py --src /home/amadeus/ama/airflow-pipeline-alura/datapipeline/datalake/bronze/twitter_flamengomalvadao/teste1 --dest /home/amadeus/ama/airflow-pipeline-alura/datapipeline/datalake/silver/twitter_flamengomalvadao/ --process-date 2022-08-01. Error code is: 1.
+Traceback (most recent call last):
+  File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/.env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 984, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/.env/lib/python3.8/site-packages/airflow/contrib/operators/spark_submit_operator.py", line 187, in execute
+    self._hook.submit(self._application)
+  File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/.env/lib/python3.8/site-packages/airflow/contrib/hooks/spark_submit_hook.py", line 403, in submit
+    raise AirflowException(
+airflow.exceptions.AirflowException: Cannot execute: /home/amadeus/Downloads/spark-3.3.0-bin-hadoop2/bin/spark-submit --master local --name twitter_transformation /home/amadeus/ama/airflow-pipeline-alura/datapipeline/spark/transfortmation.py --src /home/amadeus/ama/airflow-pipeline-alura/datapipeline/datalake/bronze/twitter_flamengomalvadao/teste1 --dest /home/amadeus/ama/airflow-pipeline-alura/datapipeline/datalake/silver/twitter_flamengomalvadao/ --process-date 2022-08-01. Error code is: 1.
+[2022-08-04 23:23:37,255] {taskinstance.py:1187} INFO - Marking task as FAILED. dag_id=twitter_dag, task_id=transform_twitter_flamengomalvadao, execution_date=20220801T090000, start_date=20220805T022328, end_date=20220805T022337
+[2022-08-04 23:23:38,677] {local_task_job.py:102} INFO - Task exited with return code 1

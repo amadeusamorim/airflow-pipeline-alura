@@ -1,0 +1,46 @@
+[2022-08-08 22:44:48,787] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: twitter_dag.twitter_flamengomalvadao 2022-07-30T09:00:00+00:00 [queued]>
+[2022-08-08 22:44:48,797] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: twitter_dag.twitter_flamengomalvadao 2022-07-30T09:00:00+00:00 [queued]>
+[2022-08-08 22:44:48,798] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-08 22:44:48,798] {taskinstance.py:881} INFO - Starting attempt 10 of 10
+[2022-08-08 22:44:48,798] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-08 22:44:49,006] {taskinstance.py:901} INFO - Executing <Task(TwitterOperator): twitter_flamengomalvadao> on 2022-07-30T09:00:00+00:00
+[2022-08-08 22:44:49,012] {standard_task_runner.py:54} INFO - Started process 183438 to run task
+[2022-08-08 22:44:49,062] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'twitter_dag', 'twitter_flamengomalvadao', '2022-07-30T09:00:00+00:00', '--job_id', '140', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/twitter_dag.py', '--cfg_path', '/tmp/tmp1ylfiw17']
+[2022-08-08 22:44:49,062] {standard_task_runner.py:78} INFO - Job 140: Subtask twitter_flamengomalvadao
+[2022-08-08 22:44:49,319] {logging_mixin.py:112} INFO - Running <TaskInstance: twitter_dag.twitter_flamengomalvadao 2022-07-30T09:00:00+00:00 [running]> on host ama
+[2022-08-08 22:44:49,359] {base_hook.py:89} INFO - Using connection to: id: twitter_default. Host: https://api.twitter.com, Port: None, Schema: None, Login: None, Password: None, extra: XXXXXXXX
+[2022-08-08 22:44:49,360] {twitter_hook.py:36} INFO - URL: https://api.twitter.com/2/tweets/search/recent?query=FlamengoMalvadao&tweet.fields=author_id,conversation_id,created_at,id,in_reply_to_user_id,public_metrics,text&expansions=author_id&user.fields=id,name,username,created_at&start_time=2022-07-30T09:00:00.00Z&end_time=2022-07-31T09:00:00.00Z
+[2022-08-08 22:44:49,679] {logging_mixin.py:112} WARNING - /home/amadeus/ama/airflow-pipeline-alura/datapipeline/.env/lib/python3.8/site-packages/urllib3/connectionpool.py:981: InsecureRequestWarning: Unverified HTTPS request is being made to host 'api.twitter.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  warnings.warn(
+[2022-08-08 22:44:49,879] {http_hook.py:150} ERROR - HTTP error: Bad Request
+[2022-08-08 22:44:49,880] {http_hook.py:151} ERROR - {"errors":[{"parameters":{"start_time":["2022-07-30T09:00Z"]},"message":"Invalid 'start_time':'2022-07-30T09:00Z'. 'start_time' must be on or after 2022-08-02T01:44Z"},{"parameters":{"end_time":["2022-07-31T09:00Z"]},"message":"Invalid 'end_time':'2022-07-31T09:00Z'. 'end_time' must be on or after 2022-08-02T01:44Z"}],"title":"Invalid Request","detail":"One or more parameters to your request was invalid.","type":"https://api.twitter.com/2/problems/invalid-request"}
+[2022-08-08 22:44:49,883] {taskinstance.py:1150} ERROR - 400:Bad Request
+Traceback (most recent call last):
+  File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/.env/lib/python3.8/site-packages/airflow/hooks/http_hook.py", line 148, in check_response
+    response.raise_for_status()
+  File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/.env/lib/python3.8/site-packages/requests/models.py", line 941, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.twitter.com/2/tweets/search/recent?query=FlamengoMalvadao&tweet.fields=author_id,conversation_id,created_at,id,in_reply_to_user_id,public_metrics,text&expansions=author_id&user.fields=id,name,username,created_at&start_time=2022-07-30T09:00:00.00Z&end_time=2022-07-31T09:00:00.00Z
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/.env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 984, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/plugins/operators/twitter_operator.py", line 51, in execute
+    for pg in hook.run():
+  File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/plugins/hooks/twitter_hook.py", line 57, in run
+    yield from self.paginate(url, session)
+  File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/plugins/hooks/twitter_hook.py", line 46, in paginate
+    data = self.connect_to_endpoint(full_url, session)
+  File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/airflow/plugins/hooks/twitter_hook.py", line 37, in connect_to_endpoint
+    return self.run_and_check(session, prep, {}).json()
+  File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/.env/lib/python3.8/site-packages/airflow/hooks/http_hook.py", line 181, in run_and_check
+    self.check_response(response)
+  File "/home/amadeus/ama/airflow-pipeline-alura/datapipeline/.env/lib/python3.8/site-packages/airflow/hooks/http_hook.py", line 152, in check_response
+    raise AirflowException(str(response.status_code) + ":" + response.reason)
+airflow.exceptions.AirflowException: 400:Bad Request
+[2022-08-08 22:44:49,885] {taskinstance.py:1187} INFO - Marking task as FAILED. dag_id=twitter_dag, task_id=twitter_flamengomalvadao, execution_date=20220730T090000, start_date=20220809T014448, end_date=20220809T014449
+[2022-08-08 22:44:53,549] {local_task_job.py:102} INFO - Task exited with return code 1

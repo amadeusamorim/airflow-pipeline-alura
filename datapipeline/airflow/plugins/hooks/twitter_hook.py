@@ -2,7 +2,7 @@ from airflow.hooks.http_hook import HttpHook # Hook especifico para API
 import requests
 import json
 
-class TwitterHook(HttpHook): # Herdo um ganho
+class TwitterHook(HttpHook): # Herdo um gancho
 
     def __init__(self, query, conn_id = None, start_time = None, end_time = None): # a pesquisa e a conexao que vamos fazer
         self.query = query
@@ -42,7 +42,7 @@ class TwitterHook(HttpHook): # Herdo um ganho
         if next_token:
             full_url = f"{url}&next_token={next_token}" #Se tiver interação, puxar o next_token
         else:
-            full_url =url
+            full_url = url
         data = self.connect_to_endpoint(full_url, session)
         yield data # Passo recursivamente
         if "next_token" in data.get("meta", {}):
